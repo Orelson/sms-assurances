@@ -1,0 +1,101 @@
+<%- include('partials/header') %>
+
+        <!-- Start Page Title Area -->
+        <div class="page-title-area page-title-bg4">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="page-title-content">
+                            <h2>Contactez-nous !</h2>
+                            <ul>
+                                <li><a href="/">Accueil</a></li>
+                                <li>Contactez-nous</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+
+        <!-- Start Contact Area -->
+        <section class="contact-area ptb-100">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">Envoyez-nous un message</span>
+                    <h2>Laissez-nous un message </h2>
+                    <p>Pour toute demande de conseils ou de devis, laissez-nous un message en remplissant ce formulaire.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="contact-form">
+                            <form id="contactForm" action="/contact" method="POST"
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="name" class="form-control" required data-error="Veuillez entrer votre nom" placeholder="Nom">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" required data-error="Veuillez entrer votre email" placeholder="Email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="phone_number" id="phone_number" required data-error="Veuillez entrer votre numéro de téléphone" class="form-control" placeholder="Téléphone">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" id="message" cols="30" rows="6" required data-error="Veuillez écrire votre message" placeholder="Votre Message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-12 col-md-12">
+                                        <button type="submit" class="default-btn">Envoyer <span></span></button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div class="contact-info-content">
+                        <h3>Contactez-nous par téléphone au</h3>
+                        <h2>
+                            <a href="tel:+22548480505">+225 48 48 05 05</a>
+                            <span>Ou par mail à l'adresse</span>
+                            <a href="mailto:angeorelsonlekpea@gmail.com">smsassurances@gmail.com</a>
+                        </h2>
+
+                        <ul class="social">
+                            <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-map"><img src="assets/img/bg-map.png" alt="image"></div>
+        </section>
+        <!-- End Contact Area -->
+<%- include('partials/footer') %>

@@ -1,0 +1,460 @@
+<%- include('partials/header') %>
+
+        <!-- Start Main Banner Area -->
+        <div class="home-area home-slides owl-carousel owl-theme">
+            <div class="main-banner item-bg1">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="container">
+                            <div class="main-banner-content">
+                                <span class="sub-title">Avec SMS ASSURANCES</span>
+                                <h1>Assurez-vous et votre famille.</h1>
+                                <p>Nous vous accompagnons dans la prise en charge de la santé de chaque membre de votre famille. Nous nous adaptons à tous les cas et proposons le produit le plus adéquat à chaque contexte.</p>
+
+                                <div class="btn-box">
+                                    <a href="#devis" class="default-btn">Obtenir un devis <span></span></a>
+                                    <a href="/contact" class="optional-btn">Contactez-nous <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banner item-bg2">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="container">
+                            <div class="main-banner-content">
+                                <span class="sub-title">AVEC SMS ASSURANCES</span>
+                                <h1>Soyez sereins sur la route.</h1>
+                                <p>Parce que vous devez au maximum éviter de stresser, nous vous laissons vous concentrer sur la route et nous nous chargeons du reste.</p>
+
+                                <div class="btn-box">
+                                    <a href="#devis" class="default-btn">Obtenir un devis <span></span></a>
+                                    <a href="/contact" class="optional-btn">Contactez-nous <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-banner item-bg5">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="container">
+                            <div class="main-banner-content">
+                                <span class="sub-title">Avec SMS ASSURANCES</span>
+                                <h1>Profitez de chaque étape de votre vie.</h1>
+                                <p>Chaque étape de votre vie est unique c'est pourquoi nous contribuons à l'embellir.</p>
+
+                                <div class="btn-box">
+                                    <a href="#devis" class="default-btn">Obtenir un devis <span></span></a>
+                                    <a href="/contact" class="optional-btn">Contactez-nous <span></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Main Banner Area -->
+
+        <!-- Modal Box -->
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="myModal" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+                        <img src="assets/img/welcome.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>        
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Obtenez un devis en remplissant le formulaire</h5>
+                <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div style="width: 100%;">
+                        <form action="/" method="POST" onsubmit="alert('Votre demande a bien été prise en compte !'); setTimeout('location.href = '/';', 5000)">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Votre Nom" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="phone" placeholder="Votre Téléphone">
+                            </div>
+                            <div class="form-group">
+                                <p>Sélectionnez votre type d'assurance</p>
+                                <select name="type" required>
+                                    <option value="Assurance santé">Assurance santé</option>
+                                    <option selected value="Assurance Multirisques Habitation">Assurance Multirisques Habitation</option>
+                                    <option value="Assurance Individuelle Accident">Assurance Individuelle Accident</option>
+                                    <option value="Assurance Voyage">Assurance Voyage</option>
+                                    <option value="Assurance Auto-moto">Assurance Auto-moto</option>
+                                    <option value="Assurance Professionnelle">Assurance Professionnelle</option>
+                                </select>
+                            </div>
+                            <div>
+
+                            </div>
+                            <button type="submit" class="submitBtn default-btn btn-lg">Envoyer votre demande <span></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div style="width: 300px; height: 200px; cursor: pointer;" class="m-4 p-3 d-flex justify-content-center bg-warning align-items-center">
+            <h2 class="text-white">Le formulaire a bien été soumis !</h2>
+        </div>
+
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+        </div>
+
+
+
+        <!-- Start Services Boxes Area -->
+        <section class="services-boxes-area bg-f8f8f8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-box">
+                            <div class="image">
+                                <img src="assets/img/featured-services-image/1.jpg" alt="image">
+                            </div>
+
+                            <div class="content">
+                                <h3><a href="##">Un processus simplifié</a></h3>
+
+                                <div class="icon">
+                                    <img src="assets/img/icon1.png" alt="image">
+                                </div>
+                                <div class="shape">
+                                    <img src="assets/img/umbrella.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="single-box">
+                            <div class="image">
+                                <img src="assets/img/featured-services-image/2.jpg" alt="image">
+                            </div>
+
+                            <div class="content">
+                                <h3><a href="##">Les prix les plus bas</a></h3>
+                                
+                                <div class="icon">
+                                    <img src="assets/img/icon2.png" alt="image">
+                                </div>
+                                <div class="shape">
+                                    <img src="assets/img/umbrella.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
+                        <div class="single-box">
+                            <div class="image">
+                                <img src="assets/img/featured-services-image/3.jpg" alt="image">
+                            </div>
+
+                            <div class="content">
+                                <h3><a href="##">Satisfaction garantie</a></h3>
+                                
+                                <div class="icon">
+                                    <img src="assets/img/icon3.png" alt="image">
+                                </div>
+                                <div class="shape">
+                                    <img src="assets/img/umbrella.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Boxes Area -->
+
+        <!-- Start About Area -->
+        <section class="about-area ptb-100 bg-f8f8f8">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-title">
+                            <span>A propos de nous</span>
+                            <h2>Nous sommes une compagnie d'assurance</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-text">
+                            <p>Notre mission principale est de vous délivrer l'assurance adéquate qui répond parfaitement à vos besoins.</p>
+
+                            <a href="/about" class="read-more-btn">En savoir plus <i class="flaticon-right-chevron"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Area -->
+
+        <!-- Start Services Area -->
+        <section class="services-area bg-f8f8f8 pb-70">
+            <div class="container">
+                <div class="services-slides owl-carousel owl-theme">
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-home-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/habitation">Multirisques habitation</a></h3>
+
+                        <p>Nous apportons des solutions concrètes pour vous permettre d'assurer votre logement en cas de sinistre.</p>
+
+                        <a href="/habitation" class="read-more-btn">En savoir plus</a>
+
+                        <div class="box-shape">
+                            <img src="assets/img/box-shape1.png" alt="image">
+                            <img src="assets/img/box-shape2.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-health-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/health">Santé</a></h3>
+
+                        <p>Nous travaillons durement pour la préservation de votre santé via des produits aux avantages et garanties exceptionnels.</p>
+
+                        <a href="/health" class="read-more-btn">En savoir plus</a>
+
+                        <div class="box-shape">
+                            <img src="assets/img/box-shape1.png" alt="image">
+                            <img src="assets/img/box-shape2.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-travel-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/travel">Voyage</a></h3>
+
+                        <p>Pendant vos différents voyages, cette assurance vous accompagne de façon sécurisée.</p>
+
+                        <br>
+
+                        <a href="/travel" class="read-more-btn">En savoir plus</a>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-car-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/car">Auto-moto</a></h3>
+
+                        <p>L'assurance auto-moto est une indispensable pour les conducteurs et propriétaires de véhicules motorisés, tant sur le plan légal que sécuritaire.</p>
+
+                        <a href="/car" class="read-more-btn">En savoir plus</a>
+
+                        <div class="box-shape">
+                            <img src="assets/img/box-shape1.png" alt="image">
+                            <img src="assets/img/box-shape2.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-life-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/life">Individuelle accident</a></h3>
+
+                        <p>L'individuelle accident est un produit d'assurance incontournable pour les particuliers dans leur vie quotidienne, leur apportant plus de sécurité et sérenité.</p>
+
+                        <a href="/life" class="read-more-btn">En savoir plus</a>
+
+                        <div class="box-shape">
+                            <img src="assets/img/box-shape1.png" alt="image">
+                            <img src="assets/img/box-shape2.png" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="single-services-box">
+                        <div class="icon">
+                            <i class="flaticon-health-insurance"></i>
+
+                            <div class="icon-bg">
+                                <img src="assets/img/icon-bg1.png" alt="image">
+                                <img src="assets/img/icon-bg2.png" alt="image">
+                            </div>
+                        </div>
+
+                        <h3><a href="/pro">Multirisques Professionnelle</a></h3>
+
+                        <p>Nous mettons tout en oeuvre pour vous fournir l'assurance qu'il faut en cas d'incident professionnel.</p>
+
+                        <a href="/pro" class="read-more-btn">En savoir plus</a>
+
+                        <div class="box-shape">
+                            <img src="assets/img/box-shape1.png" alt="image">
+                            <img src="assets/img/box-shape2.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Area -->
+
+        <%- include('partials/partners') %>
+
+        <%- include('partials/whychoose') %>
+
+        <%- include('partials/quote') %>
+
+        <!-- Start CTR Area -->
+        <section class="ctr-area">
+            <div class="container">
+                <div class="ctr-content">
+                    <h2>Des assurances pour le bien être de votre famille</h2>
+                    <p>Des assurances aux meilleurs prix et des avantages exceptionnels.</p>
+                    <a href="#devis" class="default-btn">Obtenir un devis <i class="flaticon-right-chevron"></i><span></span></a>
+                </div>
+
+                <div class="ctr-image">
+                    <img src="assets/img/ctr-img.jpg" alt="image">
+                </div>
+
+                <div class="shape">
+                    <img src="assets/img/bg-dot3.png" alt="image">
+                </div>
+            </div>
+        </section>
+        <!-- End CTR Area -->
+
+        <!-- Start Blog Area -->
+        <section class="blog-area ptb-100 pb-0">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">News</span>
+                    <h2>Toute Notre actualité</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog-post">
+                            <div class="post-image">
+                                <a href="#"><img src="assets/img/blog-image/1.jpg" alt="image"></a>
+
+                                <div class="date"><i class="flaticon-timetable"></i> 01 Juillet 2020</div>
+                            </div>
+
+                            <div class="post-content">
+                                <h3><a href="#">7 conseils pour bien choisir son assurance santé</a></h3>
+                                <p>Il est très important de bien réfléchir avant de choisir son assurance santé. Cet article vous conseille y arriver.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog-post">
+                            <div class="post-image">
+                                <a href="#"><img src="assets/img/blog-image/2.jpg" alt="image"></a>
+
+                                <div class="date"><i class="flaticon-timetable"></i> 03 Juillet 2020</div>
+                            </div>
+
+                            <div class="post-content">
+                                <h3><a href="#">Que se passe-t-il en cas d'incendie d'une maison en location ?</a></h3>
+                                <p>Comprendre les responsabilités du propriétaire et du locataire dans un cas d'incendie.</p>
+
+                                <a href="#" class="default-btn">Lire plus <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                        <div class="single-blog-post">
+                            <div class="post-image">
+                                <a href="#"><img src="assets/img/blog-image/3.jpg" alt="image"></a>
+
+                                <div class="date"><i class="flaticon-timetable"></i> 10 Juillet 2020</div>
+                            </div>
+
+                            <div class="post-content">
+                                <h3><a href="#">Le marché des véhicules d'occasion en Côte d'Ivoire</a></h3>
+                                <p>Comprendre l'état du marché des véhicules en Côte d'Ivoire pour y prospérer de façon sereine, c'est le but de ce billet.</p>
+
+                                <a href="#" class="default-btn">Voir plus <span></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <div class="blog-notes">
+                            <p>Des informations et conseils pour vous aider à faire ce que vous faites mieux, plus rapidement et de manière plus rentable. <a href="/blog">Lire le blog entier</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog Area -->
+
+        <br><br><br><br>
+        
+<%- include('partials/footer') %>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>

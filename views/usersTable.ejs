@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <!-- FontAwesome Min CSS -->
+    <link rel="stylesheet" href="/assets/css/fontawesome.min.css">
+    <!-- FlatIcon CSS -->
+    <link rel="stylesheet" href="/assets/css/flaticon.css">
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <!-- Slick Min CSS -->
+    <link rel="stylesheet" href="/assets/css/slick.min.css">
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="/assets/css/meanmenu.css">
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.min.css">
+    <!-- Odometer Min CSS -->
+    <link rel="stylesheet" href="/assets/css/odometer.min.css">
+    <!-- Nice Select Min CSS -->
+    <link rel="stylesheet" href="/assets/css/nice-select.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <title> Tableau de bord clients </title>
+
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="##">Tableau de bord</a>
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Accueil </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Deconnexion</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+            </form>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+
+    <h3 class="text-center">Personnes enregistrées sur le site</h3>
+
+    <br>
+    
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Noms et prénoms</th>
+                <th scope="col">Adresses email</th>
+                <th scope="col">Numéros de téléphone</th>
+                <th scope="col">Type d'assurance demandé</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (user of users) { %>
+                <tr>
+                    <td><%= user.username %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.phone %></td>
+                    <td><%= user.type %></td>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+    <footer>
+        <!-- jQuery Min JS -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <!-- Popper Min JS -->
+        <script src="/assets/js/popper.min.js"></script>
+        <!-- Bootstrap Min JS -->
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <!-- Parallax Min JS -->
+        <script src="/assets/js/parallax.min.js"></script>
+        <!-- Owl Carousel Min JS -->
+        <script src="/assets/js/owl.carousel.min.js"></script>
+        <!-- Slick Min JS -->
+        <script src="/assets/js/slick.min.js"></script>
+        <!-- MeanMenu JS -->
+        <script src="/assets/js/jquery.meanmenu.js"></script>
+        <!-- Appear Min JS -->
+        <script src="/assets/js/jquery.appear.min.js"></script>
+        <!-- Odometer Min JS -->
+        <script src="/assets/js/odometer.min.js"></script>
+        <!-- Nice Select Min JS -->
+        <script src="/assets/js/jquery.nice-select.min.js"></script>
+        <!-- Magnific Popup Min JS -->
+        <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- WOW Min JS -->
+        <script src="/assets/js/wow.min.js"></script>
+        <!-- AjaxChimp Min JS -->
+        <script src="/assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- Form Validator Min JS -->
+        <script src="/assets/js/form-validator.min.js"></script>
+        <!-- Contact Form Min JS -->
+        <script src="/assets/js/contact-form-script.js"></script>
+        <!-- Main JS -->
+        <script src="/assets/js/main.js"></script>
+    </footer>
+
+</body>
+</html>
