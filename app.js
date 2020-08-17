@@ -4,31 +4,33 @@ const createError = require('http-errors'),
   cookieParser = require('cookie-parser'),
   mongoose = require('mongoose'),
   logger = require('morgan'),
-  bodyParser = require('body-parser'),
-  Post = require('./database/models/Post');
+  bodyParser = require('body-parser');
 
 // Connection to the database
-mongoose.connect(
+dbConnect = mongoose.connect(
   'mongodb://localhost:27017/sms-assurances-db',
   { useNewUrlParser: true, useUnifiedTopology: true}
 ).then(() => console.log('Successfully connected to the database !'))
 .catch(err => console.log('Error to connect to the database.', err));
 
+dbConnect;
+
 // Routes
 const indexRouter = require('./routes/index'),
   aboutRouter = require('./routes/about'),
   contactRouter = require('./routes/contact'),
-  productsRouter = require('./routes/services')
-  blogRouter = require('./routes/blog')
-  habitationRouter = require('./routes/habitation')
+  productsRouter = require('./routes/services'),
+  blogRouter = require('./routes/blog'),
+  habitationRouter = require('./routes/habitation'),
   healthRouter = require('./routes/health'),
   travelRouter = require('./routes/travel'),
   carRouter = require('./routes/car'),
   lifeRouter = require('./routes/life'),
   proRouter = require('./routes/pro'),
-  createPostRouter = require('./routes/create'),
-  postRouter = require('./routes/post'),
   usersTableRouter = require('./routes/usersTables'),
+  loginRouter = require('./routes/login'),
+  faqRouter = require('./routes/faq'),
+  assistanceAutoRouter = require('./routes/assistance'),
   app = express();
 
 
@@ -58,27 +60,11 @@ app.use('/travel', travelRouter);
 app.use('/car', carRouter);
 app.use('/life', lifeRouter);
 app.use('/pro', proRouter);
-app.use('/creer', createPostRouter);
-// app.use('/blog/:id', postRouter);
 app.use('/dashboard', usersTableRouter);
+app.use('/login-to-dashboard', loginRouter);
+app.use('/terms', faqRouter);
+app.use('/assistance-auto', assistanceAutoRouter);
 
-// Créer un article
-app.use('/creer-article', (req, res) => {
-  Post.create(req.body, (error, post) => {
-    res.redirect('/blog');
-  });
-});
-
-// Afficher un article selon son ID
-app.use('/blog/post', async (req, res) => {
-  let post = await Post.findById(req.params.id, (error, post) => {
-    res.render('/post', {
-        post,
-        title: 'Hello World'
-    });
-  })
-  console.log(post);
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -94,6 +80,15 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('404', { title: 'Page Non Trouvée' });
+});
+
+app.use('/contact', function (req, res) {
+  if (req.body.name && req.body.email && req.body.phone_number && req.body.message) {
+    dbConnect.then(function(db) {
+        db.collection('contact').insertOne(req.body);
+    });    
+  }
+  res.redirect('/contact')
 });
 
 module.exports = app;

@@ -2075,7 +2075,6 @@ Main Banner Area CSS
 }
 
 .home-slides.owl-theme .owl-nav [class*=owl-].owl-prev::before {
-  content: 'Prev';
   position: absolute;
   right: 0;
   top: 50%;
@@ -2089,7 +2088,7 @@ Main Banner Area CSS
 }
 
 .home-slides.owl-theme .owl-nav [class*=owl-].owl-prev::after {
-  content: 'Prev';
+  content: 'Prec';
   position: absolute;
   right: 0;
   top: 50%;
@@ -2119,7 +2118,6 @@ Main Banner Area CSS
 }
 
 .home-slides.owl-theme .owl-nav [class*=owl-].owl-next::before {
-  content: 'Next';
   position: absolute;
   left: 0;
   top: 50%;
@@ -2133,7 +2131,7 @@ Main Banner Area CSS
 }
 
 .home-slides.owl-theme .owl-nav [class*=owl-].owl-next::after {
-  content: 'Next';
+  content: 'Suiv';
   position: absolute;
   left: 0;
   top: 50%;
@@ -3932,8 +3930,22 @@ Find Agent Area CSS
 /*================================================
 Feedback Area CSS
 =================================================*/
+.feedback-area {
+  background-color: #002e5b;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.feedback-area h2 {
+  color: #fff;
+}
+
 .feedback-slides {
   position: relative;
+}
+
+.feedback-slides .client-feedback p {
+  color: #fff;
 }
 
 .feedback-slides .client-feedback {

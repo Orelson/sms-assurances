@@ -97,6 +97,42 @@
                     
                     <p>Si vous souhaitez souscrire un contrat d’assurance individuelle accident chez SMS Assurances, vous devez nous communiquer toutes les circonstances vous concernant et qui sont de nature à faire apprécier par l’assureur, les risques qu’il prend à sa charge. Exemples : votre âge, l’état global de votre santé, vos sports favoris, un descriptif de votre métier, vos loisirs, etc. Merci de remplir le formulaire suivant et nous vous contacterons pour une cotation.</p>
 
+                    <div class="bg-light p-4 border-3">
+                        <h3>Remplissez le formulaire pour obtenir une cotation</h3>
+                        <form action="/life" method="POST" onsubmit="merci()">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input id="username" type="text" class="form-control" name="username" placeholder="Nom et prénoms *" required>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="email" class="form-control" name="email" placeholder="EMAIL *" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" name="phone" placeholder="Numéro de Téléphone *">
+                                </div>
+                                <div class="form-group col">
+                                    <select name="type" required>
+                                        <option selected value="Assurance Individuelle Accident">ASSURANCE INDIVIDUELLE ACCIDENT</option>
+                                    </select>
+                                    <p>Type d'assurance *</p>
+                                </div>
+                            </div>
+                            <div class="form-group col">
+                                <input type="hidden" class="form-control" name="date" value="<%= currentDate %>">
+                            </div>
+                            <div class="row p-3">
+                                <textarea name="message" class="form-control col" placeholder="Laissez-nous un message (facultatif)" rows="6" style="width: 90%;"></textarea>
+                            </div>
+                            <button type="submit" class="submitBtn default-btn btn-lg btn-block">Envoyer votre demande <span></span></button>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="text-danger text-sm-left">* Les champs marqués avec une astérisque sont obligatoires.</p>
+                        </form>
+                    </div>
+
                     <div class="pearo-post-navigation">
                         <div class="prev-link-wrapper">
                             <div class="info-prev-link-wrapper">

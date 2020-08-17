@@ -8,8 +8,8 @@
                         <div class="container">
                             <div class="main-banner-content">
                                 <span class="sub-title">Avec SMS ASSURANCES</span>
-                                <h1>Assurez-vous et votre famille.</h1>
-                                <p>Nous vous accompagnons dans la prise en charge de la santé de chaque membre de votre famille. Nous nous adaptons à tous les cas et proposons le produit le plus adéquat à chaque contexte.</p>
+                                <h1>Votre entreprise est sereine et pérenne</h1>
+                                <p>La Multirisque professionnelle accompagnz votre entreprise dans son évolution en la couvrant comme il faut en cas de sinistre.</p>
 
                                 <div class="btn-box">
                                     <a href="#devis" class="default-btn">Obtenir un devis <span></span></a>
@@ -27,7 +27,7 @@
                         <div class="container">
                             <div class="main-banner-content">
                                 <span class="sub-title">AVEC SMS ASSURANCES</span>
-                                <h1>Soyez sereins sur la route.</h1>
+                                <h1>Conduisez avec joie, sérénité et sécurité</h1>
                                 <p>Parce que vous devez au maximum éviter de stresser, nous vous laissons vous concentrer sur la route et nous nous chargeons du reste.</p>
 
                                 <div class="btn-box">
@@ -46,8 +46,8 @@
                         <div class="container">
                             <div class="main-banner-content">
                                 <span class="sub-title">Avec SMS ASSURANCES</span>
-                                <h1>Profitez de chaque étape de votre vie.</h1>
-                                <p>Chaque étape de votre vie est unique c'est pourquoi nous contribuons à l'embellir.</p>
+                                <h1>Profitez de chaque étape de votre vie</h1>
+                                <p>Chaque étape de votre vie est unique c'est pourquoi nous contribuons à l'embellir avec des assurances pour toute votre famille.</p>
 
                                 <div class="btn-box">
                                     <a href="#devis" class="default-btn">Obtenir un devis <span></span></a>
@@ -75,58 +75,46 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Obtenez un devis en remplissant le formulaire</h5>
-                <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                </div>
-                <div class="modal-body">
-                    <div style="width: 100%;">
-                        <form action="/" method="POST" onsubmit="alert('Votre demande a bien été prise en compte !'); setTimeout('location.href = '/';', 5000)">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Votre Nom" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="phone" placeholder="Votre Téléphone">
-                            </div>
-                            <div class="form-group">
-                                <p>Sélectionnez votre type d'assurance</p>
-                                <select name="type" required>
-                                    <option value="Assurance santé">Assurance santé</option>
-                                    <option selected value="Assurance Multirisques Habitation">Assurance Multirisques Habitation</option>
-                                    <option value="Assurance Individuelle Accident">Assurance Individuelle Accident</option>
-                                    <option value="Assurance Voyage">Assurance Voyage</option>
-                                    <option value="Assurance Auto-moto">Assurance Auto-moto</option>
-                                    <option value="Assurance Professionnelle">Assurance Professionnelle</option>
-                                </select>
-                            </div>
-                            <div>
-
-                            </div>
-                            <button type="submit" class="submitBtn default-btn btn-lg">Envoyer votre demande <span></span></button>
-                        </form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Obtenez un devis en remplissant le formulaire</h5>
+                    <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="width: 100%;">
+                            <form action="/" method="POST" onsubmit="alert('Votre demande a bien été prise en compte !'); setTimeout('location.href = '/';', 5000)">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="username" placeholder="Votre Nom" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" placeholder="Votre Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="phone" placeholder="Votre Téléphone">
+                                </div>
+                                <div class="form-group">
+                                    <p>Sélectionnez votre type d'assurance</p>
+                                    <select name="type" required>
+                                        <option value="Assurance santé">Assurance santé</option>
+                                        <option selected value="Assurance Multirisques Habitation">Assurance Multirisque Habitation</option>
+                                        <option value="Assurance Individuelle Accident">Assurance Individuelle Accident</option>
+                                        <option value="Assurance Voyage">Assurance Voyage</option>
+                                        <option value="Assurance Auto-moto">Assurance Auto-moto</option>
+                                        <option value="Assurance Multirisque Professionnelle">Assurance Multirisque Professionnelle</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="hidden" class="form-control" name="date" value="<%= currentDate %>">
+                                </div>
+                                <button type="submit" class="submitBtn default-btn btn-lg">Envoyer votre demande</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
         </div>
-
-
-        <div style="width: 300px; height: 200px; cursor: pointer;" class="m-4 p-3 d-flex justify-content-center bg-warning align-items-center">
-            <h2 class="text-white">Le formulaire a bien été soumis !</h2>
-        </div>
-
-
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
-        </div>
-
 
 
         <!-- Start Services Boxes Area -->
@@ -141,7 +129,7 @@
 
                             <div class="content">
                                 <h3><a href="##">Un processus simplifié</a></h3>
-
+                                <p>Simple, sécurisé et sans prise de tête, un processus très optimisé</p>
                                 <div class="icon">
                                     <img src="assets/img/icon1.png" alt="image">
                                 </div>
@@ -160,7 +148,7 @@
 
                             <div class="content">
                                 <h3><a href="##">Les prix les plus bas</a></h3>
-                                
+                                <p>Si vous trouvez moins cher ailleurs, nous vous remboursons le double</p>
                                 <div class="icon">
                                     <img src="assets/img/icon2.png" alt="image">
                                 </div>
@@ -179,7 +167,7 @@
 
                             <div class="content">
                                 <h3><a href="##">Satisfaction garantie</a></h3>
-                                
+                                Nore but essentiel est la satisfaction de tous nos clients
                                 <div class="icon">
                                     <img src="assets/img/icon3.png" alt="image">
                                 </div>
@@ -201,13 +189,13 @@
                     <div class="col-lg-6 col-md-12">
                         <div class="about-title">
                             <span>A propos de nous</span>
-                            <h2>Nous sommes une compagnie d'assurance</h2>
+                            <h2>L'Agent Général de GNA à Marcory</h2>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
                         <div class="about-text">
-                            <p>Notre mission principale est de vous délivrer l'assurance adéquate qui répond parfaitement à vos besoins.</p>
+                            <p>Notre mission principale est de vous délivrer l'assurance adéquate qui répond parfaitement à vos besoins dans les plus brefs délais.</p>
 
                             <a href="/about" class="read-more-btn">En savoir plus <i class="flaticon-right-chevron"></i></a>
                         </div>
@@ -231,7 +219,7 @@
                             </div>
                         </div>
 
-                        <h3><a href="/habitation">Multirisques habitation</a></h3>
+                        <h3><a href="/habitation">Multirisque habitation</a></h3>
 
                         <p>Nous apportons des solutions concrètes pour vous permettre d'assurer votre logement en cas de sinistre.</p>
 
@@ -255,7 +243,7 @@
 
                         <h3><a href="/health">Santé</a></h3>
 
-                        <p>Nous travaillons durement pour la préservation de votre santé via des produits aux avantages et garanties exceptionnels.</p>
+                        <p>Votre santé est la chose la plus importante. Nous travaillons durement à la préserver.</p>
 
                         <a href="/health" class="read-more-btn">En savoir plus</a>
 
@@ -277,9 +265,7 @@
 
                         <h3><a href="/travel">Voyage</a></h3>
 
-                        <p>Pendant vos différents voyages, cette assurance vous accompagne de façon sécurisée.</p>
-
-                        <br>
+                        <p>Des avantages exceptionnels qui vous accompagnent pendant vos différents voyages.</p>
 
                         <a href="/travel" class="read-more-btn">En savoir plus</a>
                     </div>
@@ -296,7 +282,7 @@
 
                         <h3><a href="/car">Auto-moto</a></h3>
 
-                        <p>L'assurance auto-moto est une indispensable pour les conducteurs et propriétaires de véhicules motorisés, tant sur le plan légal que sécuritaire.</p>
+                        <p>Conduisez sereinement et tranquillement votre véhicule, nous nous chargeons d'assurer tout le reste.</p>
 
                         <a href="/car" class="read-more-btn">En savoir plus</a>
 
@@ -318,7 +304,7 @@
 
                         <h3><a href="/life">Individuelle accident</a></h3>
 
-                        <p>L'individuelle accident est un produit d'assurance incontournable pour les particuliers dans leur vie quotidienne, leur apportant plus de sécurité et sérenité.</p>
+                        <p>En cas d'accident dans votre routine quotidienne, nous vous assistons et nous vous indemnisons.</p>
 
                         <a href="/life" class="read-more-btn">En savoir plus</a>
 
@@ -327,10 +313,9 @@
                             <img src="assets/img/box-shape2.png" alt="image">
                         </div>
                     </div>
-
                     <div class="single-services-box">
                         <div class="icon">
-                            <i class="flaticon-health-insurance"></i>
+                            <i class="flaticon-insurance"></i>
 
                             <div class="icon-bg">
                                 <img src="assets/img/icon-bg1.png" alt="image">
@@ -338,7 +323,7 @@
                             </div>
                         </div>
 
-                        <h3><a href="/pro">Multirisques Professionnelle</a></h3>
+                        <h3><a href="/pro">MRP</a></h3>
 
                         <p>Nous mettons tout en oeuvre pour vous fournir l'assurance qu'il faut en cas d'incident professionnel.</p>
 
@@ -364,9 +349,9 @@
         <section class="ctr-area">
             <div class="container">
                 <div class="ctr-content">
-                    <h2>Des assurances pour le bien être de votre famille</h2>
-                    <p>Des assurances aux meilleurs prix et des avantages exceptionnels.</p>
-                    <a href="#devis" class="default-btn">Obtenir un devis <i class="flaticon-right-chevron"></i><span></span></a>
+                    <h2>Des assurances pour vous et votre famille</h2>
+                    <p>Aux meilleurs prix et meilleurs avantages.</p>
+                    <a href="#devis" class="default-btn">Comparer maintenant <i class="flaticon-right-chevron"></i><span></span></a>
                 </div>
 
                 <div class="ctr-image">
@@ -381,67 +366,213 @@
         <!-- End CTR Area -->
 
         <!-- Start Blog Area -->
-        <section class="blog-area ptb-100 pb-0">
+        <section class="quote-area ptb-100 pb-0 mtb-14">
+            <div class="container">
+                <div class="section-title">
+                    <span class="sub-title">Police d'assurances</span>
+                    <h2>CIA BY GNA ASSURANCES</h2>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <video width="1000" height="535" controls>
+                        <source src="/assets/video/cia.mp4" type="video/mp4">
+                        <source src="/assets/video/cia.ogg" type="video/ogg">
+                      Mettez à jour votre navigateur pour lire la vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+         <!-- Start Feedback Area -->
+         <section class="feedback-area ptb-100 mt-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Conseils d'assureur</h2>
+                </div>
+
+                <div class="feedback-slides">
+					<div class="client-feedback">
+						<div>
+							<div class="item">
+								<div class="single-feedback">
+									<p>Ayez un système optimisé de gestion de l'alimentation électrique pour votre maison afin d'éviter les risques de surtension ou surcharge électrique, surtout en période de pluie.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Au quotidien, évitez de vous improviser électricien, mécanicien ou autre, sauf si vous vous y connaissez et faites appel à des professionnels pour vos travaux.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Lorsque vous êtes à moto, portez toujours un casque et les équipements de protection qui vont avec et soyez toujours prudents sur les routes.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Lorsque vous voyagez, assurez-vous que vous avez les documents administratifs nécessaires, et vérifiez vos affaires pour ne pas transporter des objets illicites.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Faites regulièrement votre bilan de santé et appliquez les bonnes pratiques hygiéniques pour toujours rester en pleine forme : sport, relaxation, alimentation saine...</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Pour les transports de vos marchandises, traitez toujours avec des professionnels spécialisés qui sont en règle avec la législation afin d'éviter toute mauvaise situation.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Dans vos cuisines, assurez-vous que les bouteilles de gaz sont bien fermées et contrôlez fermement qui y a accès afin de réduire les risques d'incendies.</p>
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="single-feedback">
+									<p>Face à la recrudescence des vols par bris de glace, ne laissez jamais paraître dans vos véhicules des objets de valeurs, les ranger dans le coffre.</p>
+								</div>
+							</div>
+                        </div>
+                        
+                        <button class="prev-arrow slick-arrow">
+
+                        </button>
+                        
+                        <button class="next-arrow slick-arrow">
+                            <i class='flaticon-right-chevron'></i>
+                        </button>
+                    </div>
+                    
+                    <div class="client-thumbnails">
+						<div>
+							<div class="item">
+                                <div class="img-fill"><img src="assets/img/client-image/1.jpg" alt="Charge électrique"></div>
+                                
+                                <div class="title">
+                                </div>
+							</div>
+							
+							<div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/2.jpg" alt="Répare un moteur de voiture"></div>
+                                
+                                <div class="title">
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/3.jpg" alt="Casque de moto"></div>
+                                
+                                <div class="title">
+                                </div>
+							</div>
+							
+							<div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/4.jpg" alt="Passport"></div>
+                                
+                                <div class="title">
+                                </div>
+                            </div>
+							
+							<div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/5.jpg" alt="Femme qui fait du sport"></div>
+                                
+                                <div class="title">
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/6.jpg" alt="camion de marchandises"></div>
+                                
+                                <div class="title">
+                                </div>
+							</div>
+							
+							<div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/7.jpg" alt="bouteille de gaz"></div>
+                                
+                                <div class="title">
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+								<div class="img-fill"><img src="assets/img/client-image/8.jpg" alt="Vitre de voiture brisée"></div>
+                                
+                                <div class="title">
+                                </div>
+							</div>
+						</div>
+                    </div>
+				</div>
+            </div>
+        </section>
+        <!-- End Feedback Area -->
+
+        <section class="blog-area ptb-100">
             <div class="container">
                 <div class="section-title">
                     <span class="sub-title">News</span>
-                    <h2>Toute Notre actualité</h2>
+                    <h2>Notre Actualité</h2>
+                    <p>SMS Assurances est une agence dynamique qui ne cesse d'innover et travailler durement pour apporter le meilleur service d'assurance à sa clientèle.</p>
                 </div>
 
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-post">
                             <div class="post-image">
-                                <a href="#"><img src="assets/img/blog-image/1.jpg" alt="image"></a>
+                                <a href="assets/img/blog-image/seri.jpg" target="_blank"><img src="assets/img/blog-image/1.jpg" alt="image"></a>
+                            </div>
+
+                            <div class="post-content">
+                                <h3><a href="#">Ouverture officielle de l'agence SMS Assurances</a></h3>
+                                <p>L'Agence SMS Assurances a officiellement ouvert ses portes le 1er Juillet 2020 dans la commune de Marcory.</p> <br>
 
                                 <div class="date"><i class="flaticon-timetable"></i> 01 Juillet 2020</div>
                             </div>
 
-                            <div class="post-content">
-                                <h3><a href="#">7 conseils pour bien choisir son assurance santé</a></h3>
-                                <p>Il est très important de bien réfléchir avant de choisir son assurance santé. Cet article vous conseille y arriver.</p>
-
-                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog-post">
                             <div class="post-image">
-                                <a href="#"><img src="assets/img/blog-image/2.jpg" alt="image"></a>
+                                <video width="100%" controls>
+                                    <source src="/assets/video/car.mp4" type="video/mp4">
+                                    <source src="/assets/video/car.ogg" type="video/ogg">
+                                    Mettez à jour votre navigateur pour lire la vidéo.
+                                </video>
+                            </div>
+
+                            <div class="post-content">
+                                <h3><a>GNA AUTOBOOST pour vous permettre d'acquérir une voiture neuve</a></h3>
+                                <p>GNA AUTOBOOST est un produit qui permet à tout particulier d'acheter sa voiture neuve grâce à un accompagnement financier très avantageux et transparent. Il a été lancé durant le mois de Juillet.</p> <br>
 
                                 <div class="date"><i class="flaticon-timetable"></i> 03 Juillet 2020</div>
                             </div>
 
-                            <div class="post-content">
-                                <h3><a href="#">Que se passe-t-il en cas d'incendie d'une maison en location ?</a></h3>
-                                <p>Comprendre les responsabilités du propriétaire et du locataire dans un cas d'incendie.</p>
-
-                                <a href="#" class="default-btn">Lire plus <span></span></a>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+                    <div class="col-lg-4 col-md-6">
                         <div class="single-blog-post">
                             <div class="post-image">
-                                <a href="#"><img src="assets/img/blog-image/3.jpg" alt="image"></a>
-
-                                <div class="date"><i class="flaticon-timetable"></i> 10 Juillet 2020</div>
+                                <a href="assets/img/blog-image/noufala.jpg" target="_blank"><img src="assets/img/blog-image/3.jpg" alt="image"></a>
                             </div>
 
                             <div class="post-content">
-                                <h3><a href="#">Le marché des véhicules d'occasion en Côte d'Ivoire</a></h3>
-                                <p>Comprendre l'état du marché des véhicules en Côte d'Ivoire pour y prospérer de façon sereine, c'est le but de ce billet.</p>
+                                <h3><a>Innovation : Assurance Mortalité Bétail</a></h3>
+                                <p>Noufala, l'Assurance Mortalité Bétail est une innovation de GNA pour accompagner les propriétaires de troupeaux.</p> <br>
 
-                                <a href="#" class="default-btn">Voir plus <span></span></a>
+                                <div class="date"><i class="flaticon-timetable"></i> 14 Août 2020</div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-12 col-md-12">
-                        <div class="blog-notes">
-                            <p>Des informations et conseils pour vous aider à faire ce que vous faites mieux, plus rapidement et de manière plus rentable. <a href="/blog">Lire le blog entier</a></p>
                         </div>
                     </div>
                 </div>

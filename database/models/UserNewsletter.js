@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
     email: String
 });
 
 
-const UserNewsletter = mongoose.model('UserNewsletter', UserSchema);
+const UserNewsletter = mongoose.model('Post', UserSchema);
 
 module.exports = UserNewsletter;

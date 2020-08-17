@@ -9,7 +9,7 @@
                             <h2>Assurance Multirisque habitation</h2>
                             <ul>
                                 <li><a href="/">Accueil</a></li>
-                                <li>Assurance Multirisques Habitation</li>
+                                <li>Assurance Multirisque Habitation</li>
                             </ul>
                         </div>
                     </div>
@@ -94,18 +94,58 @@
                     </blockquote>
                     
                     <p>Que ce soit en direct dans une agence physique ou via Internet, la souscription d'un contrat MRH nécessite au préalable une déclaration du risque à garantir. On entend par là une bonne information de l'assureur qui lui permettra de se faire une opinion précise du risque à assurer : type de logement, nombre de pièces principales, superficie de la maison, superficie des dépendances séparées, nature de la construction, etc. Remplissez ce formulaire de contact pour obtenir un devis.</p>
+                    
+                    <div class="bg-light p-4 border-3">
+                        <h3>Remplissez le formulaire pour obtenir une cotation</h3>
+                        <form action="/habitation" method="POST" onsubmit="merci()">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input id="username" type="text" class="form-control" name="username" placeholder="Nom et prénoms *" required>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" name="phone" placeholder="Numéro de Téléphone *">
+                                </div>
+                                <div class="form-group col">
+                                    <select name="type" required>
+                                        <option selected value="Assurance Multirisque Habitation">ASSURANCE MULTIRISQUE HABITATION</option>
+                                    </select>
+                                    <p>Type d'assurance *</p>
+                                </div>
+                            </div>
+                            <div class="form-group col">
+                                <input type="hidden" class="form-control" name="date" value="<%= currentDate %>">
+                            </div>
+                            <div class="row p-3">
+                                <textarea name="message" class="form-control col" placeholder="Laissez-nous un message (facultatif)" rows="6" style="width: 90%;"></textarea>
+                            </div>
+                            <button type="submit" class="submitBtn default-btn btn-lg btn-block">Envoyer votre demande <span></span></button>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="text-danger text-sm-left">* Les champs marqués avec une astérisque sont obligatoires.</p>
+                        </form>
+                    </div>
+
+                    
+
+
 
                     <div class="pearo-post-navigation">
                         <div class="prev-link-wrapper">
                             <div class="info-prev-link-wrapper">
-                                <a href="/life">
+                                <a href="/pro">
                                     <span class="image-prev">
                                         <img src="assets/img/services-image/2.jpg" alt="image">
                                         <span class="post-nav-title">Prec</span>
                                     </span>
 
                                     <span class="prev-link-info-wrapper">
-                                        <span class="prev-title">Assurance Professionnelle</span>
+                                        <span class="prev-title">Multirisque Professionnelle</span>
                                         <span class="meta-wrapper">
                                             <span class="date-post">03 Juillet 2020</span>
                                         </span>
@@ -116,7 +156,7 @@
 
                         <div class="next-link-wrapper">
                             <div class="info-next-link-wrapper">
-                                <a href="/pro">
+                                <a href="/health">
                                     <span class="next-link-info-wrapper">
                                         <span class="next-title">Assurance Santé</span>
                                         <span class="meta-wrapper">

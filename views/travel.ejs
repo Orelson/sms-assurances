@@ -100,6 +100,44 @@
                     
                     <p>Opter pour notre assurance voyage c’est bénéficier de la rigueur et de la solidité d’un grand groupe international ainsi que d’une disponibilité 7 jours sur 7 et 24 heures sur 24. Nous sommes là pour vous conseiller, vous orienter et vous accompagner quel que soit votre pays de destination grâce à notre connaissance des structures médicales et des risques sanitaires et à nos réseaux de prestataires qui nous permettent d’intervenir rapidement en cas de besoin. Remplissez ce formulaire et nous vous contacterons.</p>
 
+
+                    <div class="bg-light p-4 border-3">
+                        <h3>Remplissez le formulaire pour obtenir une cotation</h3>
+                        <form action="/travel" method="POST" onsubmit="merci()">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input id="username" type="text" class="form-control" name="username" placeholder="Nom et prénoms *" required>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="email" class="form-control" name="email" placeholder="EMAIL *" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" name="phone" placeholder="Numéro de Téléphone *">
+                                </div>
+                                <div class="form-group col">
+                                    <select name="type" required>
+                                        <option selected value="Assurance Voyage">ASSURANCE VOYAGE</option>
+                                    </select>
+                                    <p>Type d'assurance *</p>
+                                </div>
+                            </div>
+                            <div class="form-group col">
+                                <input type="hidden" class="form-control" name="date" value="<%= currentDate %>">
+                            </div>
+                            <div class="row p-3">
+                                <textarea name="message" class="form-control col" placeholder="Laissez-nous un message (facultatif)" rows="6" style="width: 90%;"></textarea>
+                            </div>
+                            <button type="submit" class="submitBtn default-btn btn-lg btn-block">Envoyer votre demande <span></span></button>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="text-danger text-sm-left">* Les champs marqués avec une astérisque sont obligatoires.</p>
+                        </form>
+                    </div>
+
+
                     <div class="pearo-post-navigation">
                         <div class="prev-link-wrapper">
                             <div class="info-prev-link-wrapper">

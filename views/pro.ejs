@@ -42,8 +42,8 @@
                 </div>
 
                 <div class="insurance-details-desc">
-                    <h3>Four major elements that we offer:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <h3>Les risques couverts par la multirisque professionnelle:</h3>
+                    <p>Que ce soit pour les commerçants, les artisans et entreprises du bâtiment, les professionnels de l'automobile ou autre, l'assurance multirisque professionnelle couvre la majorité des risques liés à vos activités.</p>
 
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
@@ -59,14 +59,14 @@
                             <ul class="features-list">
                                 <li><i class="fas fa-check"></i> Bris de glace et enseignes lumineuses</li>
                                 <li><i class="fas fa-check"></i> Responsabilité Civile Exploitation et après livraison</li>
-                                <li><i class="fas fa-check"></i> A Career Overview opportunity Available</li>
-                                <li><i class="fas fa-check"></i> A good Work Environment For work</li>
+                                <li><i class="fas fa-check"></i> Actes de vandalisme</li>
+                                <li><i class="fas fa-check"></i> Tempête, grêle, neige, catastrophe naturelle</li>
                             </ul>
                         </div>
                     </div>
 
-                    <h3>Setting the mood with incense</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <h3>Sécurisez votre activité professionnelle</h3>
+                    <p>L’assurance multirisque professionnelle bien que n'étant pas obligatoire peut couvrir les bâtiments, les matériels, les équipements, les marchandises et les stocks d’une entreprise contre les risques suivants : le vol et le vandalisme, l’incendie, l’explosion, la tempête, les dégâts d’eau, le grêle, le bris de glace, les dommages électriques, …etc..</p>
 
                     <ul class="wp-block-gallery columns-3">
                         <li class="blocks-gallery-item">
@@ -88,7 +88,7 @@
                         </li>
                     </ul>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>L’assurance multirisque professionnelle peut offrir des garanties complètes et adaptées aux besoins de chaque entreprise. De fait, elle peut être choisie pour la protection des locaux professionnels, la protection financière, les pertes d’exploitation, la caution financière, les matériels et les données informatiques, la protection juridique professionnelle, la responsabilité civile de l’entreprise, l’assurance-crédit ainsi que l’assistance en cas de sinistre et la période de surcroît d’activité permettant d’augmenter les indemnités journalières et la valeur des biens assurés</p>
 
                     <blockquote class="wp-block-quote">
                         <p>L’Assurance Multirisque professionnelle est une solution sur-mesure qui vous permet de protéger votre activité contre les différents risques.</p>
@@ -96,7 +96,43 @@
                         <cite>SMS Assurances.</cite>
                     </blockquote>
                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>L’assurance vient directement dédommager votre entreprise lorsqu’un risque survient, non seulement pour le remplacement du bien, du stock ou de l’équipement endommagé, mais aussi pour les conséquences de l’incident notamment sur l’activité. Un calcul est alors effectué pour déterminer précisément le manque à gagner occasionné par le sinistre après la reprise de l’activité, et l’assurance indemnise tout ou partie de ce manque à gagner. Remplissez ce formulaire pour une cotation multirisque professionnelle.</p>
+
+                    <div class="bg-light p-4 border-3">
+                        <h3>Remplissez le formulaire pour obtenir une cotation</h3>
+                        <form action="/pro" method="POST" onsubmit="merci()">
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input id="username" type="text" class="form-control" name="username" placeholder="Nom et prénoms *" required>
+                                </div>
+                                <div class="form-group col">
+                                    <input type="email" class="form-control" name="email" placeholder="Email *" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col">
+                                    <input type="text" class="form-control" name="phone" placeholder="Numéro de Téléphone *">
+                                </div>
+                                <div class="form-group col">
+                                    <select name="type" required>
+                                        <option selected value="Assurance Multirisque Professionnelle">ASSURANCE MULTIRISQUE PROFESSIONNELLE</option>
+                                    </select>
+                                    <p>Type d'assurance *</p>
+                                </div>
+                            </div>
+                            <div class="form-group col">
+                                <input type="hidden" class="form-control" name="date" value="<%= currentDate %>">
+                            </div>
+                            <div class="row p-3">
+                                <textarea name="message" class="form-control col" placeholder="Laissez-nous un message (facultatif)" rows="6" style="width: 90%;"></textarea>
+                            </div>
+                            <button type="submit" class="submitBtn default-btn btn-lg btn-block">Envoyer votre demande <span></span></button>
+                            <br>
+                            <br>
+                            <br>
+                            <p class="text-danger text-sm-left">* Les champs marqués avec une astérisque sont obligatoires.</p>
+                        </form>
+                    </div>
 
                     <div class="pearo-post-navigation">
                         <div class="prev-link-wrapper">
@@ -132,4 +168,11 @@
                                         <span class="post-nav-title">Suiv</span>
                                     </span>
                                 </a>
-                            </d
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Insurance Details Area -->
+<%- include('partials/footer') %>
